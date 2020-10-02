@@ -1,0 +1,6 @@
+#####################################
+# Adding tags to releases
+#####################################
+
+git tag -a "v0.0.1" -m "First release of ....."
+git push --follow-tags
