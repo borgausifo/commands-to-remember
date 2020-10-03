@@ -2,8 +2,8 @@
 # Adding tags to releases
 #####################################
 
-git tag -a "v0.0.1" -m "First release of ....."
-git push --follow-tags
+-------- git tag -a "v0.0.1" -m "First release of ....."
+-------- git push --follow-tags
 
 
 
@@ -16,14 +16,17 @@ Replace git:// with https://
 
 Rewrite any git:// urls to be https:// but, it won't touch sshurls (git@github.com:)
 
-git config --global url."https://github".insteadOf git://github
+-------- git config --global url."https://github".insteadOf git://github
 
 or replace with ssh
 
 Use ssh instead of https://
 
-git config --global url."git@github.com:".insteadOf "https://github.com/"
+-------- git config --global url."git@github.com:".insteadOf "https://github.com/"
 
+Below is for continuous integratin for gitlab
+
+-------- git config --global url."https://oauth2:${GITLAB_TOKEN}@gitlab.com".insteadOf 
 
 ####################################
 
